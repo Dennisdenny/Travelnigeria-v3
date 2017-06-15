@@ -1,0 +1,16 @@
+<% include partials/header %>
+
+
+<h1>Welcome to the Show Page</h1>
+
+<p><%= toursite.name %></p>
+<img src = <%= toursite.img %> width="500" height="300">
+<p><%= toursite.desc %></p>
+
+<% toursite.comments.forEach(function(comment){ %>
+    <p><strong><%= comment.author%> </strong> - <%=comment.text %></p>
+
+<% }) %>
+
+
+<% include partials/footer %>
