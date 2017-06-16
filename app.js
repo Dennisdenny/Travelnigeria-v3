@@ -8,7 +8,7 @@ seedDB = require("./seeds");
 
 seedDB();
 // mongoose.connect("mongodb://localhost/travel_nigeria_v3");
-mongoose.connect("mongodb://<weeveedenny>:<kakadennis..1>@ds127962.mlab.com:27962/travelnigeria");
+mongoose.connect("mongodb://weeveedenny:kakadennis..1@ds127962.mlab.com:27962/travelnigeria");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
